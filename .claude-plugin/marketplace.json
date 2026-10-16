@@ -1,0 +1,14 @@
+{
+  "name": "forge",
+  "owner": {
+    "name": "Gabriel Auz"
+  },
+  "description": "Spec-driven feature delivery with agents: define → plan → build → verify.",
+  "plugins": [
+    {
+      "name": "forge",
+      "source": ".",
+      "description": "Spec-driven feature delivery with agents: define → plan → build → verify."
+    }
+  ]
+}

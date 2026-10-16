@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="forge: define, plan, build, verify">
+  <defs>
+    <linearGradient id="ember" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#FFB547"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="0%" r="60%">
+      <stop offset="0" stop-color="#FF6B2C" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FF6B2C" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="360" rx="24" fill="#0D0F14"/>
+  <rect width="1280" height="360" rx="24" fill="url(#dots)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#glow)"/>
+
+  <!-- spark mark -->
+  <path d="M640 44 C643 66 650 73 672 76 C650 79 643 86 640 108 C637 86 630 79 608 76 C630 73 637 66 640 44 Z" fill="url(#ember)"/>
+
+  <text x="640" y="178" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-3" fill="#F5F3EF">forge</text>
+  <text x="640" y="228" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" fill="#9AA0AA">Spec-driven feature delivery with agents and human gates</text>
+
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle">
+    <rect x="140" y="262" width="220" height="52" rx="26" fill="#161A22" stroke="#2A2F3A"/>
+    <text x="250" y="295"><tspan fill="#FF8A3D">1</tspan><tspan fill="#F5F3EF" dx="10">define</tspan></text>
+
+    <rect x="400" y="262" width="220" height="52" rx="26" fill="#161A22" stroke="#2A2F3A"/>
+    <text x="510" y="295"><tspan fill="#FF8A3D">2</tspan><tspan fill="#F5F3EF" dx="10">plan</tspan></text>
+
+    <rect x="660" y="262" width="220" height="52" rx="26" fill="#161A22" stroke="#2A2F3A"/>
+    <text x="770" y="295"><tspan fill="#FF8A3D">3</tspan><tspan fill="#F5F3EF" dx="10">build</tspan></text>
+
+    <rect x="920" y="262" width="220" height="52" rx="26" fill="#161A22" stroke="#2A2F3A"/>
+    <text x="1030" y="295"><tspan fill="#FF8A3D">4</tspan><tspan fill="#F5F3EF" dx="10">verify</tspan></text>
+  </g>
+
+  <!-- human gates between stages -->
+  <g fill="url(#ember)">
+    <rect x="374" y="282" width="12" height="12" transform="rotate(45 380 288)"/>
+    <rect x="634" y="282" width="12" height="12" transform="rotate(45 640 288)"/>
+    <rect x="894" y="282" width="12" height="12" transform="rotate(45 900 288)"/>
+  </g>
+  <text x="640" y="342" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#6B717C" letter-spacing="2">◆  HUMAN GATE BETWEEN EVERY STAGE</text>
+</svg>
