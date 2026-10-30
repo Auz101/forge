@@ -13,6 +13,16 @@ Shared contract between the four forge skills. Every skill reads and writes arti
 
 Flow: `define → plan → build → verify`. Each skill recommends a fresh session for the next one; the artifacts carry the context.
 
+### Meeting skills (independent flow)
+
+| Order | Skill | Invocation | Role | Main artifact |
+|---|---|---|---|---|
+| 1 | `meeting-minutes` | `/forge:meeting-minutes` | Technical secretary: minutes from a transcript | `minutes.md`, `tasks.json` |
+| 2 | `meeting-notion` | `/forge:meeting-notion` | Publishes minutes and syncs tasks in Notion | `log.md` |
+| 3 | `meeting-jira` | `/forge:meeting-jira` | Creates and follows up epics and issues in Jira | `log.md`, `follow-up-<date>.md` |
+
+They use their own user-level config (`~/.claude/forge/meetings.json`), not the project's `CLAUDE.md`, and never touch the forge work folder. `minutes.md` status values: `DRAFT` · `APPROVED`. Its IDs (`D#`, `A#`, `T#`, `P#`, `R#`) are scoped to the minutes and unrelated to the `spec.md` IDs below. See [meetings.md](meetings.md).
+
 ## Project configuration (lines in the project's `CLAUDE.md`)
 
 | Line | Default when missing |

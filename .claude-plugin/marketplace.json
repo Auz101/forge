@@ -3,12 +3,12 @@
   "owner": {
     "name": "Gabriel Auz"
   },
-  "description": "Spec-driven feature delivery with agents: define → plan → build → verify.",
+  "description": "Spec-driven feature delivery with agents: define → plan → build → verify, plus meeting minutes synced to Notion and Jira.",
   "plugins": [
     {
       "name": "forge",
       "source": ".",
-      "description": "Spec-driven feature delivery with agents: define → plan → build → verify."
+      "description": "Spec-driven feature delivery with agents: define → plan → build → verify, plus meeting minutes synced to Notion and Jira."
     }
   ]
 }
