@@ -1,0 +1,30 @@
+{
+  "minutes_folder": "C:\\Users\\<user>\\Documents\\forge-meetings",
+  "language": "Spanish",
+  "notion": {
+    "destinations": {
+      "payments-migration": "https://www.notion.so/<topic-page>",
+      "technology-committee": "https://www.notion.so/<topic-page>"
+    },
+    "tasks_db": {
+      "name": "IT Tasks",
+      "url": "https://www.notion.so/<database>",
+      "mapping": {
+        "title": "Name",
+        "owner": "Owner",
+        "due_date": "Due date",
+        "priority": "Priority",
+        "status": "Status",
+        "topic": "Project",
+        "meeting": "Meeting (relation)",
+        "jira": "Jira"
+      }
+    }
+  },
+  "jira": {
+    "site": "<company>.atlassian.net",
+    "project": "PAY",
+    "status_mapping": { "Not started": "To Do", "In progress": "In Progress", "Blocked": "Blocked", "Done": "Done" },
+    "priority_mapping": { "High": "High", "Medium": "Medium", "Low": "Low" }
+  }
+}

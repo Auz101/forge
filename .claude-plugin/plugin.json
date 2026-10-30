@@ -1,7 +1,7 @@
 {
   "name": "forge",
-  "version": "0.1.0",
-  "description": "Spec-driven feature delivery with agents: define the WHAT, plan the HOW, build with parallel agents behind human gates, and verify with independent QA. Keeps living functional docs of how your system works today.",
+  "version": "0.2.0",
+  "description": "Spec-driven feature delivery with agents: define the WHAT, plan the HOW, build with parallel agents behind human gates, and verify with independent QA. Keeps living functional docs of how your system works today. Also turns meeting transcripts into minutes and syncs their tasks with Notion and Jira.",
   "author": {
     "name": "Gabriel Auz"
   },
@@ -13,7 +13,10 @@
     "qa",
     "agents",
     "workflow",
-    "living-documentation"
+    "living-documentation",
+    "meetings",
+    "notion",
+    "jira"
   ],
   "homepage": "https://github.com/Auz101/forge",
   "repository": "https://github.com/Auz101/forge"

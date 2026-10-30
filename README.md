@@ -9,7 +9,7 @@
 <br/>
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-FF6B2C?style=flat-square)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.0-1B1D22?style=flat-square)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.2.0-1B1D22?style=flat-square)](CHANGELOG.md)
 [![Claude Code plugin](https://img.shields.io/badge/Claude_Code-plugin-D97757?style=flat-square)](https://claude.com/claude-code)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-2EA043?style=flat-square)](#-contributing)
 
@@ -83,6 +83,18 @@ flowchart LR
     class D,P,B,V,C stage
     class R,PR io
 ```
+
+### 🗓️ Meetings flow
+
+Three more skills, independent from the flow above, turn a meeting transcript into minutes and keep its tasks in sync with Notion and Jira. You approve every write.
+
+| | Skill | Acts as | Produces | Never |
+|:-:|---|---|---|---|
+| **1** | [`/forge:meeting-minutes`](skills/meeting-minutes/SKILL.md) | Technical secretary | `minutes.md` with the sections you pick, `tasks.json` | writes outside the minutes folder or invents owners and dates |
+| **2** | [`/forge:meeting-notion`](skills/meeting-notion/SKILL.md) | Publisher | Minutes page in Notion, tasks updated or created in your database | decides alone whether a task exists, or deletes content |
+| **3** | [`/forge:meeting-jira`](skills/meeting-jira/SKILL.md) | Backlog coordinator | Epics and issues without duplicates, Notion ↔ Jira follow-up | creates without searching first, or transitions without asking |
+
+Details in [docs/meetings.md](docs/meetings.md).
 
 ## 📦 Install
 
@@ -166,8 +178,10 @@ your-repo/
 .claude-plugin/        plugin and marketplace manifests
 skills/
   define/  plan/  build/  verify/
+  meeting-minutes/  meeting-notion/  meeting-jira/
     SKILL.md           the skill's instructions
     references/        templates the skill fills in
+    scripts/           helper scripts (meeting-minutes)
 docs/                  how forge works (start with flow.md)
 examples/              a complete fictional feature, end to end
 assets/                images used by this README
@@ -180,6 +194,7 @@ assets/                images used by this README
 | | Doc | Read it to |
 |:-:|---|---|
 | 🔄 | [Flow](docs/flow.md) | Understand the four stages, gates and handoffs |
+| 🗓️ | [Meetings](docs/meetings.md) | Use the meeting skills: minutes, Notion and Jira |
 | 📄 | [Artifacts](docs/artifacts.md) | Know what each file contains and when it is removed |
 | 📏 | [Conventions](docs/conventions.md) | See the fixed names, statuses, IDs and configuration lines |
 | 💰 | [Models and costs](docs/models-and-costs.md) | See model choices and cost guardrails |
